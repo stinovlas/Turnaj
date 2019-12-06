@@ -9,7 +9,7 @@ class Result:
         self.my_move = move1
         self.opp_move = move2
 
-    def getmyscore(self):
+    def get_my_score(self):
         """Returns number of your scored point"""
         if self.my_move and self.opp_move is not None:
             return self.rewards[self.my_move.value[1]][self.opp_move.value[1]]
@@ -17,7 +17,7 @@ class Result:
             print("Error, moves have not been defined")
             exit(1)
 
-    def getoppscore(self):
+    def get_opp_score(self):
         """Returns number of opponent's scored points"""
         if self.my_move and self.opp_move is not None:
             return self.rewards[self.opp_move.value[1]][self.my_move.value[1]]

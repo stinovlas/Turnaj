@@ -18,8 +18,8 @@ def pick_next():
 def print_result(res, sc1, sc2):
     print("Your move was: {}".format(res.opp_move.value[0]))
     print("Your opponent's move was: {}".format(res.my_move.value[0]))
-    print("You scored {}".format(res.getoppscore()), ", total: {}".format(sc2))
-    print("Your opponent scored {}".format(res.getmyscore()), ", total: {}".format(sc1))
+    print("You scored {}".format(res.get_opp_score()), ", total: {}".format(sc2))
+    print("Your opponent scored {}".format(res.get_my_score()), ", total: {}".format(sc1))
     print("--------------------------->")
 
 
@@ -54,8 +54,8 @@ def main():
                     move1 = s1.next_move()
                     move2 = pick_next()
                     r1 = Result(move1, move2)
-                    sc1 += r1.getmyscore()
-                    sc2 += r1.getoppscore()
+                    sc1 += r1.get_my_score()
+                    sc2 += r1.get_opp_score()
                     print_result(r1, sc1, sc2)
                     s1.reward(r1)
 
