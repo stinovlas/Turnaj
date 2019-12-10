@@ -2,7 +2,7 @@ from Player import Move
 
 
 class Result:
-    rewards = ((6, 2, 2, 2), (0, 2, 8, 5), (0, 0, 10, 1), (0, 1, 18, 4))
+    rewards = ((6, 3, 3, 3), (1, 2, 8, 8), (1, 0, 10, 1), (1, 0, 18, 4))
 
     def __init__(self, move1: Move, move2: Move):
         """Class constructor, allows to get the previous move values through instance attributes"""

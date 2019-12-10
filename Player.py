@@ -3,7 +3,7 @@ import enum
 
 
 class Move(enum.Enum):
-    SafeWay = "A", 0
+    ASafeWay = "A", 0
     Betray = "B", 1
     Cooperate = "C", 2
     Deceive = "D", 3

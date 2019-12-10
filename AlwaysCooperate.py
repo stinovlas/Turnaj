@@ -3,6 +3,8 @@ from Player import Move
 
 
 class AlwaysCooperate(Player):
+    def __init__(self):
+        pass
 
     def author_name(self):
         return "Marketa"
