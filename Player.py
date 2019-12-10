@@ -11,6 +11,11 @@ class Move(enum.Enum):
 
 class Player(abc.ABC):
     @abc.abstractmethod
+    def __init__(self):
+        """Constructor. You can create attribute(s) for remembering
+        yours and/or opponent's moves here"""
+
+    @abc.abstractmethod
     def author_name(self) -> str:
         """Returns author's name in a string"""
 
@@ -20,4 +25,6 @@ class Player(abc.ABC):
 
     @abc.abstractmethod
     def reward(self, res):
-        """The current game progress is available through the Result object"""
+        """Called after each round.
+        Information about the last round is available through
+        the res object (of the Result type)"""
