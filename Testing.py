@@ -33,7 +33,6 @@ def main():
         print("Argument error")
         exit(1)
 
-    iterations = 10
     try:
         iterations = int(sys.argv[2])
     except IndexError:
