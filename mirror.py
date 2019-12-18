@@ -1,6 +1,6 @@
 import random
 
-from Player import Move, Player
+from player import Move, Player
 
 
 class Mirror(Player):

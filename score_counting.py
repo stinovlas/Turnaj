@@ -1,4 +1,4 @@
-from Player import Move, Player
+from player import Move, Player
 
 
 class ScoreCounting(Player):

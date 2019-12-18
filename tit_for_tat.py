@@ -1,5 +1,4 @@
-from Player import Player
-from Player import Move
+from player import Move, Player
 
 
 class TitForTat(Player):

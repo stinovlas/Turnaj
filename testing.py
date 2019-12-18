@@ -1,4 +1,4 @@
-from Player import Move
+from player import Move
 import importlib
 import sys
 
