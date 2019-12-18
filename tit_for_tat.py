@@ -4,7 +4,7 @@ from player import Move, Player
 class TitForTat(Player):
 
     def __init__(self):
-        self.last = Move.Cooperate
+        self.last = Move.cooperate
 
     def author_name(self):
         return "Tom"

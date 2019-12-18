@@ -4,9 +4,9 @@ from player import Move, Player
 class ScoreCounting(Player):
     """ScoreCounting player.
 
-    Start with Cooperate.
-    In following turns, chooses Cooperate if he has score greater or equal to his opponent's.
-    Otherwise chooses Betray.
+    Start with cooperate.
+    In following turns, chooses cooperate if he has score greater or equal to his opponent's.
+    Otherwise chooses betray.
     """
 
     def __init__(self):
@@ -20,9 +20,9 @@ class ScoreCounting(Player):
     def next_move(self):
         """Choose betrayal if you are loosing. Otherwise cooperate."""
         if self.my_score < self.opponent_score:
-            return Move.Betray
+            return Move.betray
         else:
-            return Move.Cooperate
+            return Move.cooperate
 
     def reward(self, result):
         """Add score from the last round to overall scores."""

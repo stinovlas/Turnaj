@@ -18,11 +18,11 @@ class Unforgiving(Player):
     def next_move(self):
         """Cooperate unless you were betrayed in the past. Otherwise betray."""
         if self.was_betrayed:
-            return Move.Betray
+            return Move.betray
         else:
-            return Move.Cooperate
+            return Move.cooperate
 
     def reward(self, result):
         """If opponent ever betrays us, we remember that."""
-        if result.opp_move == Move.Betray:
+        if result.opp_move == Move.betray:
             self.was_betrayed = True

@@ -6,7 +6,7 @@ from player import Move, Player
 class Mirror(Player):
     """Mirror player.
 
-    Start with ASafeWay.
+    Start with a safe_way.
     In following turns, choose randomly one of last 3 moves our opponent made.
     """
 
@@ -18,9 +18,9 @@ class Mirror(Player):
         return "Honza"
 
     def next_move(self):
-        """Choose randoly one of last 3 moves our opponent made."""
+        """Choose randomly one of last 3 moves our opponent made."""
         if not self.opponent_moves:  # It's first round of the game, there has been no moves
-            return Move.Cooperate
+            return Move.cooperate
         else:
             last_moves = self.opponent_moves[-3:]  # We select last three moves from the list
             return random.choice(last_moves)

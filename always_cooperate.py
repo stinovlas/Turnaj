@@ -9,7 +9,7 @@ class AlwaysCooperate(Player):
         return "Marketa"
 
     def next_move(self):
-        return Move.Cooperate
+        return Move.cooperate
 
     def reward(self, result):
         pass

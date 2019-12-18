@@ -3,10 +3,10 @@ import enum
 
 
 class Move(enum.Enum):
-    ASafeWay = "A", 0
-    Betray = "B", 1
-    Cooperate = "C", 2
-    Deceive = "D", 3
+    safe_way = ("A", 0)
+    betray = ("B", 1)
+    cooperate = ("C", 2)
+    deceive = ("D", 3)
 
 
 class Player(abc.ABC):
