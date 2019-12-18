@@ -1,6 +1,8 @@
-from player import Move
 import importlib
 import sys
+
+from player import Move
+from result import Result
 
 
 def pick_next():
@@ -56,7 +58,6 @@ def main():
     sc1 = 0
     sc2 = 0
 
-    from Result import Result
     for i in range(iterations):
         move1 = s1.next_move()
         move2 = pick_next()
